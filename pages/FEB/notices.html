@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/notices.css">
+
+    <!-- animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- favicon -->
+     <link rel="shortcut icon" href="assets/img/logo-feb.ico" type="image/x-icon">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <title>FEB - Fundação Educacional de Barretos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul class="items">
+                    <li class="submenu">
+                        <a href="#">INSTITUCIONAL</a>
+                        <ul class="sub-items">
+                            <li><a href="#">Atos Legais</a></li>
+                            <li><a href="#">Transparência</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">EDITAIS DE COMPRAS</a></li>
+                    <li><a href="#">TRABALHE CONOSCO</a></li>
+                    <li><a href="#">OUVIDORIA INSTITUCIONAL</a></li>
+                    <li><a href="#">CONSELHO CURADOR</a></li>
+                </ul>
+                <!-- Botão Hamburguer -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+
+        <section id="feb">
+            <img src="assets/img/logo_feb 1.png" alt="">
+        </section>
+
+        <div class="noticias" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <h2>NOTÍCIAS</h2>
+            <div class="noticias-container">
+                <div class="noticia">
+                    <img src="assets/img/card1.png" alt="Notícia 1">
+                    <div class="noticia-texto">
+                        <p>Descrição da notícia 1. Aqui está o conteúdo explicando a notícia com mais detalhes.</p>
+                    </div>
+                </div>
+                <div class="noticia" id="teste">
+                    <img src="assets/img/card2.png" alt="Notícia 2">
+                    <div class="noticia-texto">
+                        <p>Descrição da notícia 2. Aqui está o conteúdo explicando a notícia com mais detalhes.</p>
+                    </div>
+                </div>
+                <div class="noticia" id="noticie3">
+                    <img src="assets/img/card3.png" alt="Notícia 3">
+                    <div class="noticia-texto">
+                        <p>Descrição da notícia 3. Aqui está o conteúdo explicando a notícia com mais detalhes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Campus</h3>
+                    <p>Av. Prof. Roberto Frade Monte, 389 - Aeroporto</p>
+                    <p>Barretos - SP, 14783-226</p>
+                    <p>Caixa Postal nº 16</p>
+
+                </div>
+                <div class="footer-section">
+                    <h3>Telefones:(17) 3321-6411</h3>
+                    <p>CNPJ: 44.776.805/0001-05</p>
+                    <p>Razão Social: FUNDACAO EDUCACIONAL DE BARRETOS</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2025 UNIFEB. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- Biblioteca AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializa as animações
+    </script>
+    <script>
+function toggleMenu() {
+    const menu = document.querySelector('.items');
+    menu.classList.toggle('active');
+}
+
+    </script>
+    
+
+</body>
+</html>
