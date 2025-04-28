@@ -190,3 +190,57 @@ body {
     0 0 25px #00da66b2, 
     0 0 4px #00da66b2;
   }
+
+  /* Responsividade para telas menores que 768px (smartphones e tablets) */
+@media (max-width: 768px) {
+  /* Seção Início */
+  .inicio h1 {
+    font-size: 40px; /* Tamanho menor do título */
+  }
+
+  .inicio p {
+    font-size: 20px; /* Tamanho menor do parágrafo */
+  }
+
+  /* Seção Sobre mim */
+  .card-sobre {
+    width: 100%; /* Deixa a largura dos cards como 100% */
+    padding: 15px; /* Diminui o padding */
+  }
+
+  /* Cards de Projetos */
+  .projeto-card {
+    width: 90%; /* Faz o card ocupar 100% da largura */
+    margin-bottom: 20px; /* Dá um espaçamento entre os cards */
+    margin: 0 auto;
+  }
+
+  /* Ajustes nos h2 dos Projetos */
+  .projeto-card h2 {
+    font-size: 22px; /* Reduz o tamanho do título dos projetos */
+  }
+
+  /* Ajuste para as habilidades */
+  .habilidades p {
+    font-size: 18px; /* Reduz o tamanho do texto das habilidades */
+  }
+
+  /* Imagens de habilidades */
+  .habilidades img {
+    width: 80px; /* Diminui o tamanho das imagens */
+    height: auto;
+  }
+}
+
+
+/* sobre mim medias */
+@media (max-width: 768px) {
+  .card-sobre {
+    width: 90%; /* Largura mais estreita */
+    padding: 20px; /* Padding ajustado */
+  }
+
+  .card-sobre h2 {
+    margin-top: 20px;
+  }
+}
