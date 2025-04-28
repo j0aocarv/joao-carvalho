@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Guisti - Arquitetura & Interiores</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="logo"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <img
+          src="assets/img/logo.png"
+          alt="Guisti - Arquitetura & Interiores"
+        />
+      </div>
+      <nav>
+        <button
+          data-aos="fade-right"
+          data-aos-duration="500"
+          class="nav-btn"
+          onclick="scrollToSection('apresentacao')"
+        >
+          Apresentação
+        </button>
+        <button
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="nav-btn"
+          onclick="scrollToSection('missao')"
+        >
+          Missão, Visão e Valores
+        </button>
+        <button
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          class="nav-btn"
+          onclick="scrollToSection('contato')"
+        >
+          Contato
+        </button>
+        <button
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          class="nav-btn"
+          onclick="scrollToSection('portfolio')"
+        >
+          Portfólio
+        </button>
+      </nav>
+      <div class="cta-card" data-aos="flip-left" data-aos-duration="1500">
+        <p>
+          Transforme seu espaço com a Guisti! <br />
+          Entre em contato e descubra como podemos criar o projeto dos seus
+          sonhos.
+        </p>
+        <div class="icons">
+          <a href=""><img src="assets/img/zapzap.png" alt="WhatsApp" /></a>
+          <img src="assets/img/insta.png" alt="Instagram" />
+          <img src="assets/img/face.png" alt="Facebook" />
+        </div>
+      </div>
+    </header>
+
+    <section id="apresentacao" data-aos="flip-up" data-aos-duration="1000">
+      <div class="content">
+        <h1 data-aos="fade-right" data-aos-duration="1000">Apresentação</h1>
+        <p data-aos="fade-right" data-aos-duration="1000">
+          Temos como nossa prioridade o conforto e bem estar do indivíduo,
+          imprimindo tais sensações na arquitetura. Usando da sensibilidade para
+          capitar os mínimos detalhes, e os expressar da forma mais bela e
+          criativa no projeto. Assim, buscando uma personalidade ímpar,
+          valorizando sempre nossa identidade nacional, para gerar projetos
+          excepcionais.
+        </p>
+        <button
+          data-aos="fade-down-right"
+          data-aos-duration="1000"
+          class="contact-btn"
+        >
+          Entre em contato
+        </button>
+      </div>
+      <img
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        src="assets/img/imgapresentations.png"
+        alt="Descrição da imagem"
+        class="img-direita"
+      />
+    </section>
+
+    <section id="missao">
+      <div class="info-box" data-aos="fade-right" data-aos-duration="500">
+        <h3>Missão</h3>
+        <p>
+          O que seria a missão, se não realizar sonhos, arquitetura não é
+          somente projeto, é vivência, onde através dos ambientes vivemos nossas
+          histórias. A Guisti vem com o dever de proporcionar a realização do
+          seu sonho, com projetos profissionais de qualideade, nas áreas da
+          arquitetura, interiores e paisagismos, buscando sempre melhor atender
+          ao seu desejo, com um trabalho impar e acessível ao seu investimento.
+        </p>
+      </div>
+      <div class="info-box" data-aos="fade-right" data-aos-duration="1000">
+        <h3>Visão</h3>
+        <p>
+          Ser reconhecida pelo mercado como uma empresa séria e competente na
+          área de Arquitetura, pelo trabalho realizado e um estilo de marca,
+          qualificada, competente e confiável.
+        </p>
+      </div>
+      <div class="info-box" data-aos="fade-right" data-aos-duration="1500">
+        <h3>Valores</h3>
+        <p>
+          Amor e dedicação, são essenciais para um trabalho bem feito. Respeito
+          ao ser humano e ética, no trabalho E acima de tudo, humildade e
+          simplicidade para com nossos clientes, colaboradores e equipe
+        </p>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <img
+        src="assets/img/gui.png"
+        alt="Foto do Cliente"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      />
+      <div>
+        <h2 data-aos="fade-right" data-aos-duration="2000">Sobre mim</h2>
+        <p data-aos="fade-right" data-aos-duration="2500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          condimentum lacus Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Fugiat tempore necessitatibus eligendi praesentium! Quasi natus
+          dignissimos nostrum, pariatur culpa neque. odio risus. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Molestiae, nemo.
+        </p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <!--<h2 data-aos="fade-right" data-aos-duration="1000">Galeria de Projetos</h2>
+        <div class="portfolio-item" data-aos="flip-down" data-aos-duration="2000">
+            <img src="assets/img/exemple1.png" alt="Projeto 1">
+            <div class="overlay">Projeto 1</div>
+        </div>
+        <div class="portfolio-item" data-aos="flip-down" data-aos-duration="2000">
+            <img src="assets/img/exemple2.png" alt="Projeto 2">
+            <div class="overlay">Projeto 2</div>
+        </div>
+        <div class="portfolio-item" data-aos="flip-down" data-aos-duration="2000">
+            <img src="assets/img/exemple2.png" alt="Projeto 2">
+            <div class="overlay">Projeto 3</div>
+        </div>
+        <div class="portfolio-item" data-aos="flip-down" data-aos-duration="2000">
+            <img src="assets/img/exemple2.png" alt="Projeto 2">
+            <div class="overlay">Projeto 4</div>
+        </div>
+        <div class="portfolio-item" data-aos="flip-down" data-aos-duration="2000">
+            <img src="assets/img/exemple2.png" alt="Projeto 2">
+            <div class="overlay">Projeto 5</div>
+        </div> -->
+      <h2 data-aos="fade-right" data-aos-duration="1000">
+        Seção em manutenção, por favor aguarde.
+      </h2>
+    </section>
+
+    <footer id="contato" data-aos="fade-right" data-aos-duration="1000">
+      <h2>Contato</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum
+        lacus odio risus.
+      </p>
+      <div class="icons">
+        <img src="assets/img/zapzap.png" alt="WhatsApp" />
+        <img src="assets/img/insta.png" alt="Instagram" />
+        <img src="assets/img/face.png" alt="Facebook" />
+      </div>
+    </footer>
+
+    <section id="direitos">
+      <p>© 2025 Guisti. Todos os direitos reservados.</p>
+    </section>
+
+    <script>
+      function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+/* Estilos principais */
+body {
+  background-color: #003300; /* fundo padrão */
+  font-family: "Poppins", sans-serif;
+}
+
+.sobre-section {
+  background-color: #003300;
+  background-image: url('../img/background-patas.png'); /* imagem com fundo de patinhas */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-warning {
+  color: #D3E900 !important; /* amarelo do título */
+}
+
+.cachorro-img {
+  max-width: 80%;
+}
+
+.servicos-section {
+  background-color: #002900;
+}
+
+.servicos-section .card-body p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.estrutura-section {
+  background-color: #003d00;
+}
+
+.estrutura-img {
+  border: 3px solid #b3cc00;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.contato-section {
+  background-color: #003000;
+}
+
+.rodape {
+  background-color: #002200;
+  font-size: 14px;
+  border-top: 1px solid #004400;
+}
+
+/* Banner responsivo */
+.hero {
+  background-image: url('../img/foto-med-vet.png'); /* Ajuste aqui se o caminho estiver diferente */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh; /* ocupa 100% da altura da tela */
+}
+
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 30vh; /* Menor em dispositivos móveis */
+    padding: 2rem 1rem; /* Ajuste de padding em telas pequenas */
+  }
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.238); /* Fundo escuro para menu colapsado */
+    padding: 1rem;
+    border-radius: 10px;
+  }
+}
+
+/* Navegação */
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  flex-direction: column; /* Itens em coluna no mobile */
+}
+
+/*.navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.238); 
+  border-radius: 10px;
+} */

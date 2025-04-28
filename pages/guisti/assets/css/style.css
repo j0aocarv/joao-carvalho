@@ -1,0 +1,299 @@
+/* styles.css */
+
+body {
+    font-family: "Tenor Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #55674F;
+}
+
+@font-face {
+    font-family: 'A DAY WITHOUT SUN';
+    src: url('../fonts/a_day_without_sun/A\ DAY\ WITHOUT\ SUN.otf') format('opentype');
+    font-style: normal;
+}
+
+h1{
+    color: #55674F;
+    font-family: "A DAY WITHOUT SUN";
+    font-size: 95px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    
+}
+
+header {
+    background-color: #55674F;
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.nav-btn {
+    background-color: #BFB193;
+    color: #55674F;
+    border-radius: 25px;
+    padding: 20px 50px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.nav-btn:hover {
+    background-color: #90856c;
+    color: #475742;
+}
+
+.cta-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #BFB193;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.icons img {
+    margin: 10px;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+#apresentacao {
+    display: flex;
+    align-items: center; /* Alinhamento vertical perfeito */
+    justify-content: space-between; /* Mantém espaçamento ideal */
+    background-image: url(../img/marmore.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+#apresentacao p{
+    color: #55674F;
+}
+
+.content {
+    max-width: 50%; /* Ocupar metade da largura */
+    margin: auto;
+}
+
+.img-direita {
+    max-width: 40%; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém proporção */
+}
+
+.contact-btn {
+    background-color: #55674F;
+    color: #BFB193;
+    padding: 15px 40px;
+    border-radius: 50px;
+}
+
+.contact-btn:hover {
+    background-color: #223e28;
+}
+
+#missao {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#missao h3{
+    font-family: "A DAY WITHOUT SUN";
+    color: #BFB193;
+    font-size: 96px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#missao p{
+    color: #BFB193;
+}
+
+.info-box {
+    width: 30%;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 50px;
+}
+#sobre p{
+    text-align: left;
+    color: #BFB193;
+    margin: 0px;
+}
+#sobre h2{
+    text-align: left;
+    color: #BFB193;
+    font-family: "A DAY WITHOUT SUN";
+    font-size: 96px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+#sobre img{
+   border-radius: 35px;
+}
+
+
+
+#portfolio {
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.portfolio-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+#portfolio h2{
+    font-family: "A DAY WITHOUT SUN";
+    font-size: 96px;
+    margin: 0px;
+    font-weight: normal;
+    color: #55674F;
+}
+
+.portfolio-item img {
+    border-radius: 30px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #55674F;    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+footer {
+    background-color: #55674F;
+    color: white;
+    padding: 20px;
+}
+#contato h2{
+    font-family: "A DAY WITHOUT SUN";
+    font-size: 96px;
+    margin: 0px;
+    font-weight: normal;
+    color: #BFB193;
+}
+
+#contato p {
+    color: #BFB193;
+}
+
+
+#direitos {
+    background-color: rgba(0, 0, 0, 0.2); /* Cor um pouco mais escura que o footer */
+    color: rgba(255, 255, 255, 0.31);
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Espaçamento vertical */
+    font-size: 14px;
+}
+
+/* responsividade */
+
+@media (max-width: 768px) {
+    /* Centraliza o conteúdo das sections */
+    #apresentacao,
+    #sobre,
+    #missao,
+    #portfolio,
+    #contato {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centraliza horizontalmente */
+      text-align: center;  /* Garante que o texto também fique alinhado */
+    }
+
+    .logo img{
+        width: 300px;
+    }
+
+    #portfolio img{
+        width: 300px;
+    }
+  
+    /* Faz o texto ocupar toda a largura sem ficar colado nas bordas */
+    .content {
+      max-width: 90%;
+    }
+  
+    /* Ajusta as imagens para não ultrapassarem a tela */
+    .img-direita, 
+    #sobre img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Centraliza o botão de contato */
+    .contact-btn {
+      display: block;
+      margin: 20px auto;
+    }
+  
+    /* Ajusta os ícones das redes sociais */
+    .icons {
+      display: flex;
+      justify-content: center; /* Alinha os ícones horizontalmente */
+      gap: 15px; /* Dá um espaçamento entre os ícones */
+    }
+  
+    /* Ajusta a section "Todos os direitos reservados" */
+    #direitos {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Mantém a centralização e ajusta ainda mais os tamanhos */
+    h1, #contato h2, #sobre h2, #missao h3, #portfolio h2 {
+      font-size: 35px;
+    }
+  
+    /* Garante que todo o conteúdo fique centralizado */
+    #apresentacao, 
+    #sobre, 
+    #missao, 
+    #portfolio, 
+    #contato {
+      text-align: center;
+      align-items: center;
+    }
+  
+    /* Ajusta os botões e os espaçamentos */
+    .nav-btn, .contact-btn {
+      width: 80%;
+      max-width: 300px;
+    }
+  
+    /* Ajusta os ícones das redes sociais */
+    .icons img {
+      width: 40px;
+      height: auto;
+    }
+  }
+  
