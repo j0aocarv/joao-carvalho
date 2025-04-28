@@ -1,0 +1,192 @@
+/* Estilos gerais */
+body {
+    background-color: #0A0A0A;
+    color: #fff;
+    font-family: "Afacad", sans-serif;
+  }
+  
+  .menu {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  }
+  
+  .menu .nav-link {
+    color: white;
+    margin-left: 20px;
+  }
+  
+  .menu .logo {
+    color: #00DA66;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  /* Seção início */
+  .inicio {
+    height: 100vh;
+    background: url('../img/background-portifolio.png') no-repeat center center/cover;
+    color: white;
+    padding-top: 80px;
+  }
+
+  .inicio h1{
+    font-size: 64px;
+  }
+  .inicio p{
+    font-size: 32px;
+  }
+  
+  .inicio .destaque {
+    color: #00DA66;
+    font-weight: bold;
+  }
+  
+  /* Botões personalizados */
+  .btn-outline-success {
+    border-color: #00DA66;
+    color: #00FF7F;
+    padding: 12px 40px;
+  }
+  .btn-outline-success:hover {
+    background: #00DA66;
+    color: #000;
+  }
+  
+  /* Sobre mim */
+  .card-sobre {
+    background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+    border: 1px solid #00DA66;
+    border-radius: 15px;
+  }
+  
+  /* Projetos */
+  .projeto-card {
+    background: #1E1E1E;
+    border-radius: 15px;
+    box-shadow: 
+      10px 10px 0px #00DA66,  /* borda verde à direita e embaixo */
+      10px 10px 0px rgba(0, 0, 0, 0.2); /* sombra leve e suave para o efeito 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Efeito quando passa o mouse */
+  .projeto-card:hover {
+    transform: translateY(-8px); /* levanta um pouquinho */
+    border: 1px solid #00DA66;
+    box-shadow: 
+      8px 8px 20px #050505, 
+      -8px -8px 20px #1a1a1a;
+  }
+  
+  
+  .projeto-card .btn-success {
+    background: transparent; /* Sem cor no fundo */
+    border: 2px solid #00DA66; /* Bordas verdes */
+    color: #00DA66; /* Texto na cor verde */
+    padding: 10px 40px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha */
+    transition: all 0.3s ease; /* Transição suave */
+    text-align: center; /* Alinha o texto no centro */
+    display: inline-block; /* Faz o botão se comportar como um bloco inline */
+  }
+  
+  /* Efeito de brilho no texto */
+  .projeto-card .btn-success:hover {
+    color: #00DA66;
+    text-shadow: 0 0 10px #00DA66, 0 0 20px #00DA66, 0 0 30px #00DA66; /* Efeito brilho no texto */
+    transform: scale(1.05); /* Leve aumento do botão ao passar o mouse */
+  }
+  
+  /* Habilidades */
+  /* .habilidades img {
+    width: 60px;
+    height: auto;
+  } */
+
+  .habilidades p{
+    font-size: 20px;
+  }
+  
+  /* Contato */
+
+/* Seção Contato */
+.contato {
+  border: 2px solid #00DA66; /* Borda verde */
+  padding: 40px 20px; /* Espaçamento interno */
+  border-radius: 15px; /* Bordas arredondadas */
+  width: 80%; /* Largura controlada para ficar proporcional */
+  max-width: 800px; /* Limita a largura máxima */
+  margin: 0 auto 50px; /* Centraliza e adiciona espaçamento abaixo */
+  text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+.contato h2 {
+  color: #00DA66; /* Título verde */
+}
+
+.contato p {
+  color: #ddd; /* Cor do texto mais suave */
+}
+
+.contato .d-flex a {
+  color: #00DA66; /* Ícones com cor verde */
+  transition: color 0.3s ease; /* Transição suave */
+}
+
+.contato .d-flex a:hover {
+  color: #00b359; /* Cor no hover */
+}
+
+  
+  footer {
+    background: #0d0d0d;
+    border-top: 1px solid #00DA66;
+  }
+
+  footer a{
+    color: #00b359;
+  }
+  
+  .scroll-down {
+    position: absolute; /* deixa ela posicionada em cima da tela */
+    left: 50%; /* empurra 50% da largura */
+    transform: translateX(-50%); /* puxa metade pra esquerda pra centralizar certinho */
+    bottom: 30px; /* distância da parte de baixo */
+    font-size: 3rem;
+    color: #00DA66;
+    animation: bounce 2s infinite;
+    text-decoration: none;
+    z-index: 10; /* pra ficar acima do fundo */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    40% {
+      transform: translateX(-50%) translateY(10px);
+    }
+    60% {
+      transform: translateX(-50%) translateY(5px);
+    }
+  }
+  
+  .titulo-secao {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .traço {
+    color: #00DA66; /* verde neon igual seu tema */
+    margin: 0 10px;
+    
+  }
+  .brilho{
+  text-shadow: 
+    0 0 25px #00da66b2, 
+    0 0 4px #00da66b2;
+  }
