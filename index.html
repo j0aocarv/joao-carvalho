@@ -1,290 +1,444 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>João Carvalho | Portfólio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>João Carvalho | Portfólio</title>
 
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- css -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="favicon.ico">
-</head>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
 
-<body>
+  <body>
+    <!-- Menu -->
+    <header
+      class="menu fixed-top d-flex justify-content-between align-items-center p-3"
+    >
+      <div class="logo">&lt;João Carvalho/&gt;</div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Menu -->
-  <header class="menu fixed-top d-flex justify-content-between align-items-center p-3">
-    <div class="logo">
-      &lt;João Carvalho/&gt;
+    <!-- Início -->
+    <section
+      class="inicio d-flex flex-column justify-content-center align-items-center text-center"
+      id="inicio"
+    >
+      <h1 id="typing-title"></h1>
+      <p id="typing-paragraph">
+        Desenvolvendo <span id="typing-effect" class="destaque"></span
+        ><span class="cursor">|</span>
+      </p>
+      <div class="mt-4">
+        <a
+          href="assets/Currículo Profissional João Carvalho.pdf"
+          class="btn btn-outline-success me-2"
+        >
+          <i class="bi bi-file-earmark-text"></i> Currículo
+        </a>
+        <a href="https://wa.me/5517981748394" class="btn btn-outline-success">
+          <i class="bi bi-chat-dots"></i> Contato
+        </a>
+      </div>
+    </section>
+
+    <a href="#sobre" class="scroll-down">
+      <i class="bi bi-chevron-down"></i>
+    </a>
+
+    <!-- Sobre mim -->
+    <section class="sobre py-5" id="sobre">
+      <div class="container card-sobre p-4">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center">
+            <img
+              src="assets/img/minha foto.png"
+              class="img-fluid"
+              alt="Foto João"
+            />
+          </div>
+          <div class="col-md-9">
+            <h2 style="color: #00da66">Sobre mim</h2>
+            <p>
+              Olá! Meu nome é João Carvalho e sou desenvolvedor web apaixonado
+              por transformar ideias em experiências digitais funcionais e
+              atrativas. Atuo na área de Tecnologia da Informação há mais de 1
+              ano, com foco no desenvolvimento web, criação de protótipos e
+              construção de sites responsivos para diversos tipos de projetos.
+              Sempre busco aliar usabilidade, performance e um design que
+              conecta com as pessoas, entregando soluções práticas e modernas
+              para cada necessidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projetos py-5" id="projetos">
+      <div class="container">
+        <h2 class="titulo-secao brilho">
+          <span class="traço">-</span> Projetos <span class="traço">-</span>
+        </h2>
+        <div class="row g-4">
+          <!-- Card Projeto -->
+          <div class="col-md-6">
+            <div class="card projeto-card">
+              <img
+                src="assets/img/projeto1.png"
+                class="card-img-top"
+                alt="Projeto 1"
+              />
+              <div class="card-body">
+                <h2 class="card-title" style="color: #00da66">
+                  Instituição de Ensino - Campanha Pós-Graduação
+                </h2>
+                <p class="card-text" style="color: #fff">
+                  Desenvolvimento do site institucional para a campanha da
+                  pós-graduação de uma instituição de ensino. A arte e
+                  identidade visual foram criadas pelo designer da instituição,
+                  enquanto fui responsável pela estruturação do protótipo de
+                  usabilidade e implementação completa do projeto.
+                </p>
+                <a href="pages/posgrad/index.html" class="btn btn-success"
+                  >Visitar site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card projeto-card">
+              <img
+                src="assets/img/projeto2.png"
+                class="card-img-top"
+                alt="Projeto 1"
+              />
+              <div class="card-body">
+                <h2 class="card-title" style="color: #00da66">
+                  Clínica Veterinária Universitária - Instituição de Ensino
+                </h2>
+                <p class="card-text" style="color: #fff">
+                  Criação do protótipo e desenvolvimento do site institucional
+                  para a clínica veterinária universitária da mesma instituição
+                  de ensino, priorizando agendamentos, serviços e orientações
+                  aos tutores de forma prática e acessível.
+                </p>
+                <a href="pages/med-vet/index.html" class="btn btn-success"
+                  >Visitar site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card projeto-card">
+              <img
+                src="assets/img/projeto3.png"
+                class="card-img-top"
+                alt="Projeto 1"
+              />
+              <div class="card-body">
+                <h2 class="card-title" style="color: #00da66">
+                  Fundação Educacional
+                </h2>
+                <p class="card-text" style="color: #fff">
+                  Desenvolvimento do site institucional para uma fundação
+                  educacional, com foco na comunicação clara dos cursos,
+                  projetos e serviços oferecidos pela fundação.
+                </p>
+                <a href="pages/FEB/index.html" class="btn btn-success"
+                  >Visitar site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card projeto-card">
+              <img
+                src="assets/img/projeto4.png"
+                class="card-img-top"
+                alt="Projeto 1"
+              />
+              <div class="card-body">
+                <h2 class="card-title" style="color: #00da66">
+                  Escritório de Arquitetura
+                </h2>
+                <p class="card-text" style="color: #fff">
+                  Elaboração do protótipo e desenvolvimento de site
+                  institucional para um escritório de arquitetura, alinhando
+                  estética refinada, apresentação de projetos e conceitos
+                  arquitetônicos com foco em uma experiência elegante e
+                  responsiva.
+                </p>
+                <a href="pages/guisti/index.html" class="btn btn-success"
+                  >Visitar site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Repetir mais cards conforme necessário -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="habilidades py-5" id="habilidades">
+      <div class="container text-center">
+        <h2 class="titulo-secao brilho">
+          <span class="traço">-</span>Habilidades<span class="traço">-</span>
+        </h2>
+        <div class="row g-4 justify-content-center mt-4">
+          <div class="col-4 col-md-2">
+            <img src="assets/img/html.png" alt="HTML" class="img-fluid mb-2" />
+            <p class="brilho">HTML</p>
+          </div>
+
+          <div class="col-4 col-md-2">
+            <img src="assets/img/css.png" alt="CSS" class="img-fluid mb-2" />
+            <p class="brilho">CSS</p>
+          </div>
+
+          <div class="col-4 col-md-2">
+            <img
+              src="assets/img/bootstrap.png"
+              alt="Bootstrap"
+              class="img-fluid mb-2"
+            />
+            <p class="brilho">Bootstrap</p>
+          </div>
+
+          <div class="col-4 col-md-2">
+            <img
+              src="assets/img/wordpress.png"
+              alt="wordpress"
+              class="img-fluid mb-2"
+            />
+            <p class="brilho">Wordpress</p>
+          </div>
+
+          <div class="col-4 col-md-2">
+            <img src="assets/img/php.png" alt="php" class="img-fluid mb-2" />
+            <p class="brilho">PHP</p>
+          </div>
+
+          <div class="col-4 col-md-2">
+            <img src="assets/img/JS.png" alt="JS" class="img-fluid mb-2" />
+            <p class="brilho">JavaScript</p>
+          </div>
+
+          <div class="col-4 col-md-2">
+            <img src="assets/img/I.A.png" alt="I.A" class="img-fluid mb-2" />
+            <p class="brilho">I.A</p>
+          </div>
+
+          <div class="col-4 col-md-2">
+            <img
+              src="assets/img/figma.png"
+              alt="figma"
+              class="img-fluid mb-2"
+            />
+            <p class="brilho">Figma</p>
+          </div>
+
+          <!-- Adicionar outras habilidades -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato py-5" id="contato">
+  <div class="container text-center">
+    <h2>Entre em contato comigo</h2>
+    <p>Se você gostou do meu trabalho e quer trocar uma ideia sobre projetos, estou à disposição!
+      Entre em contato comigo para criarmos juntos soluções que façam a diferença.</p>
+
+    <!-- Formulário -->
+    <form id="formContato" class="row g-3 justify-content-center mt-4">
+      <div class="col-12">
+        <input type="text" name="nome" id="nome" class="form-control" placeholder="Seu nome" required>
+      </div>
+      <div class="col-12">
+        <textarea name="mensagem" id="mensagem" class="form-control" rows="4" placeholder="Digite sua mensagem..." required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Enviar no WhatsApp</button>
+      </div>
+    </form>
+
+    <!-- Ícones de redes sociais -->
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <a href="https://www.instagram.com/joaocarvalho.dev?igsh=MTVya2dxem16N3Q2eA=="><i class="bi bi-instagram fs-3"></i></a>
+      <!-- <a href="#"><i class="bi bi-whatsapp fs-3"></i></a> -->
+      <a href="mailto:joaocarvalhon2.2003@gmail.com"><i class="bi bi-envelope fs-3"></i></a>
     </div>
-    <nav>
-      <ul class="nav">
-        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Início -->
-  <section class="inicio d-flex flex-column justify-content-center align-items-center text-center" id="inicio">
-  <h1 id="typing-title"></h1>
-  <p id="typing-paragraph">Desenvolvendo <span id="typing-effect" class="destaque"></span><span class="cursor">|</span></p>
-  <div class="mt-4">
-    <a href="#" class="btn btn-outline-success me-2">
-      <i class="bi bi-file-earmark-text"></i> Currículo
-    </a>
-    <a href="#contato" class="btn btn-outline-success">
-      <i class="bi bi-chat-dots"></i> Contato
-    </a>
   </div>
 </section>
 
-  <a href="#sobre-mim" class="scroll-down">
-    <i class="bi bi-chevron-down"></i>
-  </a>
-  
 
-  <!-- Sobre mim -->
-    <section class="sobre py-5" id="sobre">
-        <div class="container card-sobre p-4">
-        <div class="row align-items-center">
-            <div class="col-md-3 text-center">
-            <img src="assets/img/minha foto.png" class="img-fluid" alt="Foto João">
-            </div>
-            <div class="col-md-9">
-            <h2 style="color: #00DA66;">Sobre mim</h2>
-            <p>Olá! Meu nome é João Carvalho e sou desenvolvedor web apaixonado por transformar ideias em experiências digitais funcionais e atrativas.
-              Atuo na área de Tecnologia da Informação há mais de 1 ano, com foco no desenvolvimento web, criação de protótipos e construção de sites responsivos para diversos tipos de projetos.
-              Sempre busco aliar usabilidade, performance e um design que conecta com as pessoas, entregando soluções práticas e modernas para cada necessidade.</p>
-            </div>
-        </div>
-        </div>
-    </section>
 
-  <!-- Projetos -->
-  <section class="projetos py-5" id="projetos">
-    <div class="container">
-     <h2 class="titulo-secao brilho">
-  <span class="traço">-</span> Projetos <span class="traço">-</span>
-</h2>
-      <div class="row g-4">
-
-        <!-- Card Projeto -->
-        <div class="col-md-6">
-          <div class="card projeto-card">
-            <img src="assets/img/projeto1.png" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h2 class="card-title" style="color: #00DA66;">Instituição de Ensino - Campanha Pós-Graduação</h2>
-              <p class="card-text" style="color: #fff;">Desenvolvimento do site institucional para a campanha da pós-graduação de uma instituição de ensino. A arte e identidade visual foram criadas pelo designer da instituição, enquanto fui responsável pela estruturação do protótipo de usabilidade e implementação completa do projeto.</p>
-              <a href="pages/posgrad/index.html" class="btn btn-success">Visitar site</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card projeto-card">
-            <img src="assets/img/projeto2.png" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h2 class="card-title" style="color: #00DA66;">Clínica Veterinária Universitária - Instituição de Ensino</h2>
-              <p class="card-text" style="color: #fff;">Criação do protótipo e desenvolvimento do site institucional para a clínica veterinária universitária da mesma instituição de ensino, priorizando agendamentos, serviços e orientações aos tutores de forma prática e acessível.</p>
-              <a href="pages/med-vet/index.html" class="btn btn-success">Visitar site</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card projeto-card">
-            <img src="assets/img/projeto3.png" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h2 class="card-title" style="color: #00DA66;">Fundação Educacional</h2>
-              <p class="card-text" style="color: #fff;">Desenvolvimento do site institucional para uma fundação educacional, com foco na comunicação clara dos cursos, projetos e serviços oferecidos pela fundação.</p>
-              <a href="pages/FEB/index.html" class="btn btn-success">Visitar site</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card projeto-card">
-            <img src="assets/img/projeto4.png" class="card-img-top" alt="Projeto 1">
-            <div class="card-body">
-              <h2 class="card-title" style="color: #00DA66;">Escritório de Arquitetura</h2>
-              <p class="card-text" style="color: #fff;">Elaboração do protótipo e desenvolvimento de site institucional para um escritório de arquitetura, alinhando estética refinada, apresentação de projetos e conceitos arquitetônicos com foco em uma experiência elegante e responsiva.</p>
-              <a href="pages/guisti/index.html" class="btn btn-success">Visitar site</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Repetir mais cards conforme necessário -->
-
+    <!-- Rodapé -->
+    <footer class="text-center py-4">
+      <p style="color: #00da66; font-size: 20px" class="brilho">
+        &lt;João Carvalho/&gt;
+      </p>
+      <p>
+        Se quiser acompanhar mais do meu trabalho, siga nas redes profissionais
+        abaixo:.
+      </p>
+      <div>
+        <a href="https://github.com/j0aocarv"><i class="bi bi-linkedin fs-4 me-2"></i></a>
+        <a href="https://www.linkedin.com/in/joaomarcelocarvalho/"><i class="bi bi-github fs-4"></i></a>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Habilidades -->
-  <section class="habilidades py-5" id="habilidades">
-    <div class="container text-center">
-        <h2 class="titulo-secao brilho">
-            <span class="traço">-</span>Habilidades<span class="traço">-</span></h2>
-      <div class="row g-4 justify-content-center mt-4">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-        <div class="col-4 col-md-2">
-          <img src="assets/img/html.png" alt="HTML" class="img-fluid mb-2">
-          <p class="brilho">HTML</p>
-        </div>
+    <script>
+      // Frases para o título e o parágrafo
+      const titles = [
+        "Transformando ideias em interfaces que funcionam.",
+        "Criando experiências incríveis para usuários.",
+        "Dando vida para seus projetos.",
+      ];
 
-        <div class="col-4 col-md-2">
-          <img src="assets/img/css.png" alt="CSS" class="img-fluid mb-2">
-          <p class="brilho">CSS</p>
-        </div>
+      const paragraphs = ["inovações();", "soluções();", "experiências();"];
 
-        <div class="col-4 col-md-2">
-          <img src="assets/img/bootstrap.png" alt="Bootstrap" class="img-fluid mb-2">
-          <p class="brilho">Bootstrap</p>
-        </div>
+      const titleElement = document.getElementById("typing-title");
+      const paragraphElement = document.getElementById("typing-effect");
+      const cursor = document.querySelector(".cursor");
 
-        <div class="col-4 col-md-2">
-          <img src="assets/img/wordpress.png" alt="wordpress" class="img-fluid mb-2">
-          <p class="brilho">Wordpress</p>
-        </div>
+      let titleIndex = 0;
+      let paragraphIndex = 0;
+      let charIndexTitle = 0;
+      let charIndexParagraph = 0;
 
-        <div class="col-4 col-md-2">
-          <img src="assets/img/php.png" alt="php" class="img-fluid mb-2">
-          <p class="brilho">PHP</p>
-        </div>
+      // Efeito do cursor piscando
+      setInterval(() => {
+        cursor.style.opacity = cursor.style.opacity === "0" ? "1" : "0";
+      }, 500);
 
-        <div class="col-4 col-md-2">
-          <img src="assets/img/JS.png" alt="JS" class="img-fluid mb-2">
-          <p class="brilho">JavaScript</p>
-        </div>
-
-        <div class="col-4 col-md-2">
-          <img src="assets/img/I.A.png" alt="I.A" class="img-fluid mb-2">
-          <p class="brilho">I.A</p>
-        </div>
-
-        <!-- Adicionar outras habilidades -->
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section class="contato py-5" id="contato">
-    <div class="container text-center">
-      <h2>Entre em contato comigo</h2>
-      <p>Se você gostou do meu trabalho e quer trocar uma ideia sobre projetos, estou à disposição!
-        Entre em contato comigo para criarmos juntos soluções que façam a diferença.</p>
-      <div class="d-flex justify-content-center gap-3 mt-4">
-        <a href="#"><i class="bi bi-instagram fs-3"></i></a>
-        <a href="#"><i class="bi bi-whatsapp fs-3"></i></a>
-        <a href="#"><i class="bi bi-envelope fs-3"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="text-center py-4">
-    <p style="color: #00DA66; font-size: 20px;" class="brilho">&lt;João Carvalho/&gt;</p>
-    <p>Se quiser acompanhar mais do meu trabalho, siga nas redes profissionais abaixo:.</p>
-    <div>
-      <a href="#"><i class="bi bi-linkedin fs-4 me-2"></i></a>
-      <a href="#"><i class="bi bi-github fs-4"></i></a>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <script>
-    // Frases para o título e o parágrafo
-    const titles = [
-      "Transformando ideias em interfaces que funcionam.",
-      "Criando experiências incríveis para usuários.",
-      "Deixando seus projetos com vida."
-    ];
-    
-    const paragraphs = [
-      "Desenvolvendo sonhos();",
-      "Programando soluções();",
-      "Construindo o futuro();"
-    ];
-    
-    const titleElement = document.getElementById('typing-title');
-    const paragraphElement = document.getElementById('typing-effect');
-    const cursor = document.querySelector('.cursor');
-    
-    let titleIndex = 0;
-    let paragraphIndex = 0;
-    let charIndexTitle = 0;
-    let charIndexParagraph = 0;
-    
-    // Efeito do cursor piscando
-    setInterval(() => {
-      cursor.style.opacity = (cursor.style.opacity === '0' ? '1' : '0');
-    }, 500);
-    
-    // Função pra digitar o título
-    function typeTitle() {
-      if (charIndexTitle < titles[titleIndex].length) {
-        titleElement.textContent += titles[titleIndex].charAt(charIndexTitle);
-        charIndexTitle++;
-        setTimeout(typeTitle, 80);
-      } else {
-        setTimeout(eraseTitle, 2000); // Espera um tempo e apaga
+      // Função pra digitar o título
+      function typeTitle() {
+        if (charIndexTitle < titles[titleIndex].length) {
+          titleElement.textContent += titles[titleIndex].charAt(charIndexTitle);
+          charIndexTitle++;
+          setTimeout(typeTitle, 80);
+        } else {
+          setTimeout(eraseTitle, 2000); // Espera um tempo e apaga
+        }
       }
-    }
-    
-    // Função pra apagar o título
-    function eraseTitle() {
-      if (charIndexTitle > 0) {
-        titleElement.textContent = titles[titleIndex].substring(0, charIndexTitle - 1);
-        charIndexTitle--;
-        setTimeout(eraseTitle, 40);
-      } else {
-        titleIndex = (titleIndex + 1) % titles.length;
-        setTimeout(typeTitle, 500);
+
+      // Função pra apagar o título
+      function eraseTitle() {
+        if (charIndexTitle > 0) {
+          titleElement.textContent = titles[titleIndex].substring(
+            0,
+            charIndexTitle - 1
+          );
+          charIndexTitle--;
+          setTimeout(eraseTitle, 40);
+        } else {
+          titleIndex = (titleIndex + 1) % titles.length;
+          setTimeout(typeTitle, 500);
+        }
       }
-    }
-    
-    // Função pra digitar o parágrafo
-    function typeParagraph() {
-      if (charIndexParagraph < paragraphs[paragraphIndex].length) {
-        paragraphElement.textContent += paragraphs[paragraphIndex].charAt(charIndexParagraph);
-        charIndexParagraph++;
-        setTimeout(typeParagraph, 80);
-      } else {
-        setTimeout(eraseParagraph, 2000); // Espera um tempo e apaga
+
+      // Função pra digitar o parágrafo
+      function typeParagraph() {
+        if (charIndexParagraph < paragraphs[paragraphIndex].length) {
+          paragraphElement.textContent +=
+            paragraphs[paragraphIndex].charAt(charIndexParagraph);
+          charIndexParagraph++;
+          setTimeout(typeParagraph, 80);
+        } else {
+          setTimeout(eraseParagraph, 2000); // Espera um tempo e apaga
+        }
       }
-    }
-    
-    // Função pra apagar o parágrafo
-    function eraseParagraph() {
-      if (charIndexParagraph > 0) {
-        paragraphElement.textContent = paragraphs[paragraphIndex].substring(0, charIndexParagraph - 1);
-        charIndexParagraph--;
-        setTimeout(eraseParagraph, 40);
-      } else {
-        paragraphIndex = (paragraphIndex + 1) % paragraphs.length;
-        setTimeout(typeParagraph, 500);
+
+      // Função pra apagar o parágrafo
+      function eraseParagraph() {
+        if (charIndexParagraph > 0) {
+          paragraphElement.textContent = paragraphs[paragraphIndex].substring(
+            0,
+            charIndexParagraph - 1
+          );
+          charIndexParagraph--;
+          setTimeout(eraseParagraph, 40);
+        } else {
+          paragraphIndex = (paragraphIndex + 1) % paragraphs.length;
+          setTimeout(typeParagraph, 500);
+        }
       }
-    }
-    
-    // Começa tudo
-    document.addEventListener("DOMContentLoaded", () => {
-      typeTitle();
-      typeParagraph();
+
+      // Começa tudo
+      document.addEventListener("DOMContentLoaded", () => {
+        typeTitle();
+        typeParagraph();
+      });
+
+      //formulario
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("formContato");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+
+      if (!nome || !mensagem) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      const numero = "5517981005886"; // <-- Seu número com DDI + DDD
+      const texto = `Olá! Meu nome é ${nome}%0AMensagem: ${mensagem}`;
+
+      const link = `https://wa.me/${numero}?text=${texto}`;
+      window.open(link, "_blank");
+
+      // Limpa os campos após enviar
+      form.reset();
     });
+  });
+
     </script>
-    
-</body>
+  </body>
 </html>
